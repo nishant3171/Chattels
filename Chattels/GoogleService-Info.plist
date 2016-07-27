@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>502850175750-frbmkdhp19u455aaqqlggokri7uvphn0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.502850175750-frbmkdhp19u455aaqqlggokri7uvphn0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBVclj0ts-9739eTrHUb6qK3BwXl8rwnc0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>502850175750</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.MLBNP.Chattels</string>
+	<key>PROJECT_ID</key>
+	<string>chattels-92bfb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chattels-92bfb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:502850175750:ios:608bb618665f48c2</string>
+	<key>DATABASE_URL</key>
+	<string>https://chattels-92bfb.firebaseio.com</string>
+</dict>
+</plist>
