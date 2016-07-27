@@ -13,6 +13,7 @@
 		F42A4BBE1D492ED90001E831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42A4BBD1D492ED90001E831 /* Assets.xcassets */; };
 		F42A4BC11D492ED90001E831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42A4BBF1D492ED90001E831 /* LaunchScreen.storyboard */; };
 		F42A4BC91D492F800001E831 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F42A4BC81D492F800001E831 /* GoogleService-Info.plist */; };
+		F43B3B3C1D4957B3005F7EC5 /* WorkCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B3B3B1D4957B3005F7EC5 /* WorkCollectionViewController.swift */; };
 		F48FCCBD1D493AE000B42CC4 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FCCBC1D493AE000B42CC4 /* MainCollectionViewController.swift */; };
 		F48FCCBF1D493D1800B42CC4 /* Chattels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FCCBE1D493D1800B42CC4 /* Chattels.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		F42A4BC01D492ED90001E831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F42A4BC21D492ED90001E831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F42A4BC81D492F800001E831 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F43B3B3B1D4957B3005F7EC5 /* WorkCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkCollectionViewController.swift; sourceTree = "<group>"; };
 		F48FCCBC1D493AE000B42CC4 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		F48FCCBE1D493D1800B42CC4 /* Chattels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chattels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				F48FCCBC1D493AE000B42CC4 /* MainCollectionViewController.swift */,
+				F43B3B3B1D4957B3005F7EC5 /* WorkCollectionViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				F48FCCBD1D493AE000B42CC4 /* MainCollectionViewController.swift in Sources */,
 				F48FCCBF1D493D1800B42CC4 /* Chattels.swift in Sources */,
 				F42A4BB71D492ED90001E831 /* AppDelegate.swift in Sources */,
+				F43B3B3C1D4957B3005F7EC5 /* WorkCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

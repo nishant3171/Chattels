@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -19,105 +18,97 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="kfz-SB-PA2" kind="relationship" relationship="rootViewController" id="8Y2-6S-iJ0"/>
+                        <segue destination="Aub-me-5n5" kind="relationship" relationship="rootViewController" id="8R1-lD-gCq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DuA-gW-utg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-78" y="271"/>
         </scene>
-        <!--Chattels-->
-        <scene sceneID="1XK-Zh-2Qc">
+        <!--Work Collection View Controller-->
+        <scene sceneID="Rju-jO-3mY">
             <objects>
-                <collectionViewController id="kfz-SB-PA2" customClass="MainCollectionViewController" customModule="Chattels" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ulv-ZW-njj">
+                <viewController id="Aub-me-5n5" customClass="WorkCollectionViewController" customModule="Chattels" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VoG-F1-6eo"/>
+                        <viewControllerLayoutGuide type="bottom" id="pEo-PN-yAb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IfW-Ji-c66">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VJa-iA-lP6">
-                            <size key="itemSize" width="175" height="150"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DailyWork" id="Xn1-SD-GPV">
-                                <rect key="frame" x="0.0" y="64" width="175" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="175" height="150"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FmA-dc-xBW">
-                                            <rect key="frame" x="0.0" y="0.0" width="175" height="150"/>
-                                        </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUl-sq-Zes">
-                                            <rect key="frame" x="0.0" y="120" width="175" height="30"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fdh-Tl-1dq">
+                                <rect key="frame" x="8" y="72" width="584" height="520"/>
+                                <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="0.0" id="fbB-Vh-lWE">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WorkCell" id="xAT-5H-5kH">
+                                        <rect key="frame" x="0.0" y="64" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batman Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEc-uV-XWy">
-                                                    <rect key="frame" x="8" y="5" width="159" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uzy-wA-97i">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxS-Gl-vEz">
+                                                    <rect key="frame" x="0.0" y="70" width="100" height="30"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batman Logo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gb-5O-r6U">
+                                                            <rect key="frame" x="8" y="5" width="84" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="4c8-oC-DK5"/>
+                                                        <constraint firstItem="1gb-5O-r6U" firstAttribute="leading" secondItem="yxS-Gl-vEz" secondAttribute="leading" constant="8" id="GE6-u4-GQA"/>
+                                                        <constraint firstAttribute="bottom" secondItem="1gb-5O-r6U" secondAttribute="bottom" constant="4" id="M1D-9a-2VJ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1gb-5O-r6U" secondAttribute="trailing" constant="8" id="Mzc-BM-M2B"/>
+                                                        <constraint firstItem="1gb-5O-r6U" firstAttribute="top" secondItem="yxS-Gl-vEz" secondAttribute="top" constant="5" id="i9e-dN-rwK"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="ZEc-uV-XWy" secondAttribute="bottom" constant="4" id="JCD-Ee-nFd"/>
-                                                <constraint firstItem="ZEc-uV-XWy" firstAttribute="leading" secondItem="XUl-sq-Zes" secondAttribute="leading" constant="8" id="Mxh-kV-jjO"/>
-                                                <constraint firstAttribute="trailing" secondItem="ZEc-uV-XWy" secondAttribute="trailing" constant="8" id="OH8-Ai-N3R"/>
-                                                <constraint firstAttribute="trailing" secondItem="ZEc-uV-XWy" secondAttribute="trailing" constant="8" id="ON1-cw-6MP"/>
-                                                <constraint firstItem="ZEc-uV-XWy" firstAttribute="top" secondItem="XUl-sq-Zes" secondAttribute="top" constant="5" id="SfC-tg-nMC"/>
-                                                <constraint firstAttribute="bottom" secondItem="ZEc-uV-XWy" secondAttribute="bottom" constant="4" id="V1n-rV-w2N"/>
-                                                <constraint firstItem="ZEc-uV-XWy" firstAttribute="top" secondItem="XUl-sq-Zes" secondAttribute="top" constant="5" id="cWk-h5-naf"/>
-                                                <constraint firstItem="ZEc-uV-XWy" firstAttribute="leading" secondItem="XUl-sq-Zes" secondAttribute="leading" constant="8" id="ijY-sg-mNU"/>
-                                                <constraint firstAttribute="height" constant="30" id="umU-7u-mqo"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="OH8-Ai-N3R"/>
-                                                    <exclude reference="V1n-rV-w2N"/>
-                                                    <exclude reference="cWk-h5-naf"/>
-                                                    <exclude reference="ijY-sg-mNU"/>
-                                                </mask>
-                                            </variation>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS7-bc-fmU">
-                                            <rect key="frame" x="8" y="8" width="159" height="104"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <color key="backgroundColor" red="0.25487014651298523" green="0.25492024421691895" blue="0.25486692786216736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="XUl-sq-Zes" secondAttribute="bottom" id="80L-8w-b14"/>
-                                    <constraint firstAttribute="trailing" secondItem="XUl-sq-Zes" secondAttribute="trailing" id="8VP-35-WHh"/>
-                                    <constraint firstAttribute="trailing" secondItem="FmA-dc-xBW" secondAttribute="trailing" id="A2C-cK-Q82"/>
-                                    <constraint firstItem="oS7-bc-fmU" firstAttribute="leading" secondItem="Xn1-SD-GPV" secondAttribute="leadingMargin" id="EFS-JZ-Apa"/>
-                                    <constraint firstItem="XUl-sq-Zes" firstAttribute="leading" secondItem="Xn1-SD-GPV" secondAttribute="leading" id="PJi-KR-K0L"/>
-                                    <constraint firstItem="FmA-dc-xBW" firstAttribute="leading" secondItem="Xn1-SD-GPV" secondAttribute="leading" id="PUM-25-hhT"/>
-                                    <constraint firstItem="XUl-sq-Zes" firstAttribute="top" secondItem="oS7-bc-fmU" secondAttribute="bottom" constant="8" id="hZA-O5-qU1"/>
-                                    <constraint firstItem="FmA-dc-xBW" firstAttribute="top" secondItem="Xn1-SD-GPV" secondAttribute="top" id="lfV-ee-Pj4"/>
-                                    <constraint firstItem="oS7-bc-fmU" firstAttribute="top" secondItem="Xn1-SD-GPV" secondAttribute="topMargin" id="mox-ZN-DUg"/>
-                                    <constraint firstAttribute="bottom" secondItem="FmA-dc-xBW" secondAttribute="bottom" id="pSA-bf-zNF"/>
-                                    <constraint firstItem="oS7-bc-fmU" firstAttribute="trailing" secondItem="Xn1-SD-GPV" secondAttribute="trailingMargin" id="wS2-S3-ruU"/>
-                                </constraints>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="kfz-SB-PA2" id="amX-ph-XB2"/>
-                            <outlet property="delegate" destination="kfz-SB-PA2" id="M4T-B1-7x7"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="Chattels" id="Qvg-MY-Qhy">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5IM-mv-cXJ"/>
-                    </navigationItem>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="khc-G3-vYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                                        <color key="backgroundColor" red="0.20781612396240234" green="0.20785865187644958" blue="0.20781344175338745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Uzy-wA-97i" secondAttribute="bottom" id="ASi-it-QGl"/>
+                                            <constraint firstAttribute="trailing" secondItem="yxS-Gl-vEz" secondAttribute="trailing" id="MvD-Ip-kr3"/>
+                                            <constraint firstItem="yxS-Gl-vEz" firstAttribute="leading" secondItem="xAT-5H-5kH" secondAttribute="leading" id="OGE-OO-jeI"/>
+                                            <constraint firstAttribute="bottom" secondItem="yxS-Gl-vEz" secondAttribute="bottom" id="S12-du-4bK"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uzy-wA-97i" secondAttribute="trailing" id="S3z-nr-fiy"/>
+                                            <constraint firstItem="Uzy-wA-97i" firstAttribute="leading" secondItem="xAT-5H-5kH" secondAttribute="leading" id="e1f-3O-Hxz"/>
+                                            <constraint firstItem="Uzy-wA-97i" firstAttribute="top" secondItem="xAT-5H-5kH" secondAttribute="top" id="og1-ha-IB1"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fdh-Tl-1dq" firstAttribute="top" secondItem="VoG-F1-6eo" secondAttribute="bottom" constant="8" id="BOj-Bg-cc5"/>
+                            <constraint firstAttribute="trailing" secondItem="Fdh-Tl-1dq" secondAttribute="trailing" constant="8" id="JPF-vx-xUD"/>
+                            <constraint firstItem="pEo-PN-yAb" firstAttribute="top" secondItem="Fdh-Tl-1dq" secondAttribute="bottom" constant="8" id="NCf-yL-vaI"/>
+                            <constraint firstItem="Fdh-Tl-1dq" firstAttribute="leading" secondItem="IfW-Ji-c66" secondAttribute="leading" constant="8" id="z8s-da-fv9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j7F-Lq-9LK"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Fdh-Tl-1dq" id="wCI-g8-jMw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4C-P6-EaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624" y="271"/>
+            <point key="canvasLocation" x="573" y="271"/>
         </scene>
     </scenes>
 </document>
