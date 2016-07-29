@@ -16,6 +16,7 @@
 		F43B3B3C1D4957B3005F7EC5 /* WorkCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B3B3B1D4957B3005F7EC5 /* WorkCollectionViewController.swift */; };
 		F48FCCBD1D493AE000B42CC4 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FCCBC1D493AE000B42CC4 /* MainCollectionViewController.swift */; };
 		F48FCCBF1D493D1800B42CC4 /* Chattels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FCCBE1D493D1800B42CC4 /* Chattels.swift */; };
+		F4F630531D4AA9EF0011F116 /* DetailWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F630521D4AA9EF0011F116 /* DetailWorkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F43B3B3B1D4957B3005F7EC5 /* WorkCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkCollectionViewController.swift; sourceTree = "<group>"; };
 		F48FCCBC1D493AE000B42CC4 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		F48FCCBE1D493D1800B42CC4 /* Chattels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chattels.swift; sourceTree = "<group>"; };
+		F4F630521D4AA9EF0011F116 /* DetailWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailWorkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				F48FCCBC1D493AE000B42CC4 /* MainCollectionViewController.swift */,
 				F43B3B3B1D4957B3005F7EC5 /* WorkCollectionViewController.swift */,
+				F4F630521D4AA9EF0011F116 /* DetailWorkViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				F48FCCBD1D493AE000B42CC4 /* MainCollectionViewController.swift in Sources */,
 				F48FCCBF1D493D1800B42CC4 /* Chattels.swift in Sources */,
 				F42A4BB71D492ED90001E831 /* AppDelegate.swift in Sources */,
+				F4F630531D4AA9EF0011F116 /* DetailWorkViewController.swift in Sources */,
 				F43B3B3C1D4957B3005F7EC5 /* WorkCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
