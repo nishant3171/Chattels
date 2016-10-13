@@ -153,10 +153,10 @@
                                                             </subviews>
                                                         </view>
                                                         <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="pjG-QR-Mey" secondAttribute="trailing" id="9KY-mp-JwB"/>
-                                                            <constraint firstItem="pjG-QR-Mey" firstAttribute="top" secondItem="uH1-sJ-ZqS" secondAttribute="top" id="UHx-16-bBM"/>
-                                                            <constraint firstAttribute="bottom" secondItem="pjG-QR-Mey" secondAttribute="bottom" id="dZ3-jc-aWa"/>
-                                                            <constraint firstItem="pjG-QR-Mey" firstAttribute="leading" secondItem="uH1-sJ-ZqS" secondAttribute="leading" id="w0h-Uc-Jgr"/>
+                                                            <constraint firstItem="pjG-QR-Mey" firstAttribute="top" secondItem="uH1-sJ-ZqS" secondAttribute="top" id="TBq-cf-cvJ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="pjG-QR-Mey" secondAttribute="trailing" id="XBH-qA-Vfu"/>
+                                                            <constraint firstAttribute="bottom" secondItem="pjG-QR-Mey" secondAttribute="bottom" id="f5X-Wj-lbl"/>
+                                                            <constraint firstItem="pjG-QR-Mey" firstAttribute="leading" secondItem="uH1-sJ-ZqS" secondAttribute="leading" id="ikJ-SP-bJg"/>
                                                         </constraints>
                                                     </collectionViewCell>
                                                 </cells>
@@ -183,6 +183,9 @@
                                                                 <state key="normal" title="Quality?">
                                                                     <color key="titleColor" red="0.99987119436264038" green="0.99998223781585693" blue="0.99984109401702881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="BOz-MK-I02" kind="presentation" id="B3h-Hp-T8m"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
