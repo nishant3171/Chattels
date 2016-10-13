@@ -16,6 +16,7 @@
 		F43B3B3C1D4957B3005F7EC5 /* WorkCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B3B3B1D4957B3005F7EC5 /* WorkCollectionViewController.swift */; };
 		F48FCCBD1D493AE000B42CC4 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FCCBC1D493AE000B42CC4 /* MainCollectionViewController.swift */; };
 		F48FCCBF1D493D1800B42CC4 /* Chattels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48FCCBE1D493D1800B42CC4 /* Chattels.swift */; };
+		F4CD8B1B1D6DD88400BD60C1 /* RatingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CD8B1A1D6DD88400BD60C1 /* RatingsViewController.swift */; };
 		F4F630531D4AA9EF0011F116 /* DetailWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F630521D4AA9EF0011F116 /* DetailWorkViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		F43B3B3B1D4957B3005F7EC5 /* WorkCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkCollectionViewController.swift; sourceTree = "<group>"; };
 		F48FCCBC1D493AE000B42CC4 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		F48FCCBE1D493D1800B42CC4 /* Chattels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chattels.swift; sourceTree = "<group>"; };
+		F4CD8B1A1D6DD88400BD60C1 /* RatingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingsViewController.swift; sourceTree = "<group>"; };
 		F4F630521D4AA9EF0011F116 /* DetailWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailWorkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 				F48FCCBC1D493AE000B42CC4 /* MainCollectionViewController.swift */,
 				F43B3B3B1D4957B3005F7EC5 /* WorkCollectionViewController.swift */,
 				F4F630521D4AA9EF0011F116 /* DetailWorkViewController.swift */,
+				F4CD8B1A1D6DD88400BD60C1 /* RatingsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -170,12 +173,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = MLBNP;
 				TargetAttributes = {
 					F42A4BB21D492ED90001E831 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = G7TV7283LG;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -269,6 +273,7 @@
 				F42A4BB71D492ED90001E831 /* AppDelegate.swift in Sources */,
 				F4F630531D4AA9EF0011F116 /* DetailWorkViewController.swift in Sources */,
 				F43B3B3C1D4957B3005F7EC5 /* WorkCollectionViewController.swift in Sources */,
+				F4CD8B1B1D6DD88400BD60C1 /* RatingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +313,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -353,8 +360,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -373,6 +382,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -387,6 +397,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MLBNP.Chattels;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -400,6 +412,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MLBNP.Chattels;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
